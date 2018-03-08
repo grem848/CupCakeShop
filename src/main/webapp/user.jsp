@@ -7,8 +7,12 @@
         <title>Andy's Cupcakes - User</title>
     </head>
     <body>
-        
+        <%@include file="includes/LogOut.jsp" %>
+        <br>
+        <br>
+        <br>
         <h1>USER</h1>
+        
             
         <%
             User user = (User) session.getAttribute("user");

@@ -8,7 +8,10 @@
     </head>
     <body>
         
-        <%@include file="includes/menu.jsp" %>
+      <%@include file="includes/menu.jsp" %>
+        <br>
+        <br>
+        <br>
         
         <h1>Andy's Cupcakes</h1>
         

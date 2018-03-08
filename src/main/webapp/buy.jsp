@@ -12,6 +12,8 @@
         <title>Order Done</title>
     </head>
     <body>
+        <%@include file="includes/LogOut.jsp" %>
+        <br>
         <h1>your order has been placed</h1>
         <h1>you can pick it up now :)</h1>
         

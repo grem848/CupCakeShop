@@ -6,6 +6,10 @@
         <title>Andy's Cupcakes - UserDeleted</title>
     </head>
     <body>
+        <%@include file="includes/LogOut.jsp" %>
+        <br>
+        <br>
+        <br>
         
         <h1>USER DELETED</h1>
         
