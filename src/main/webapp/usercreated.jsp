@@ -6,6 +6,10 @@
         <title>Andy's Cupcakes - UserCreated</title>
     </head>
     <body>
+        <%@include file="includes/LogOut.jsp" %>
+        <br>
+        <br>
+        <br>
         
         <h1>USER CREATED</h1>
         

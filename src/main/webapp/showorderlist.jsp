@@ -15,6 +15,13 @@
         <title>order list</title>
     </head>
     <body>
+        <%@include file="includes/LogOut.jsp" %>
+        <br>
+        <br>
+        <br>
+        <
+        
+        
         <%
             User user = (User) session.getAttribute("user");
 

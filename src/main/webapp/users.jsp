@@ -8,6 +8,11 @@
         <title>Andy's Cupcakes - Users</title>
     </head>
     <body>
+        <%@include file="includes/menu.jsp" %>
+        <br>
+        <br>
+        <br>
+        <
         
         <h1>USERS</h1>
         

@@ -6,7 +6,10 @@
         <title>Andy's Cupcakes - Login</title>
     </head>
     <body>
-        
+        <%@include file="includes/menu.jsp" %>
+        <br>
+        <br>
+        <br>
         <form action="Control" method="post">
             <input type="text" name="username" value="" placeholder="Username" />
             <input type="password" name="password" value="" placeholder="Password" />

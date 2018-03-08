@@ -13,6 +13,10 @@
         <title>Cupcake Shoppingcat</title>
     </head>
     <body>
+        <%@include file="includes/LogOut.jsp" %>
+        <br>
+        <br>
+        <br>
         <h1>SHOPPINGCART</h1>
         <%
             User user = (User) session.getAttribute("user");
