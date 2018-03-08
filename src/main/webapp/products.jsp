@@ -286,7 +286,7 @@
         <br /><br />
 
         <footer class="container-fluid text-center">
-            <p>ANDY'S CUPCAKES are a Copyrighted subsidiary company of AndyCorp Holdings.</p>
+            <p>ANDY'S CUPCAKES is a Copyrighted subsidiary company of AndyCorp Holdings.</p>
         </footer>
 
     </body>
