@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <%@page import="java.util.ArrayList"%>
 <%@page import="entity.Cupcake"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -85,7 +84,7 @@
         }
     </style>
     <body>
-
+        
 
         <div class="jumbotron">
             <div class="container text-center">
@@ -116,6 +115,8 @@
                 </div>
             </div>
         </nav>
+        <h1  align="center">PRODUCTS</h1>
+        <br>
 
         <div class="container">    
             <div class="row">
