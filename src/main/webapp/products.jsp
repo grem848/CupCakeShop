@@ -12,7 +12,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <title>Andy's Cupcakes - products</title>
     </head>
-    <style>
+    <!-- <style>
         /* Remove the navbar's default rounded borders and increase the bottom margin */ 
         .navbar {
             margin-bottom: 50px;
@@ -83,6 +83,7 @@
             background-color: #3e8e41;
         }
     </style>
+    -->
     <body>
                <%@include file="includes/menu.jsp" %> 
         <h1  align="center">PRODUCTS</h1>
