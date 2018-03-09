@@ -44,7 +44,7 @@
             #picture{
                 height:400px;
                 width:280px;
-                margin-left: 38.5%;
+                margin-left: 40.8%;
                 float:none;
                 position: initial;
             }
