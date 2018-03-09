@@ -100,14 +100,14 @@
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="/WebProject/">Home</a></li>
-                        <li><a href="/WebProject/products.jsp">Products</a></li>
+                        <li class="active"><a href="index.jsp">Home</a></li>
+                        <li><a href="products.jsp">Products</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="/WebProject/login.jsp"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                        <li><a href="/WebProject/index.jsp"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
-                        <li><a href="/WebProject/user.jsp"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
-                        <li><a href="/WebProject/cupcakelist.jsp"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+                        <li><a href="login.jsp"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                        <li><a href="index.jsp"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+                        <li><a href="user.jsp"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+                        <li><a href="cupcakelist.jsp"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
                     </ul>
                 </div>
             </div>
