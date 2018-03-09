@@ -38,6 +38,6 @@
             <input type="hidden" name="origin" value="create" />
             <input type="submit" value="CREATE USER" />
         </form>
-        
+        <%@include file="includes/footer.jsp" %>
     </body>
 </html>

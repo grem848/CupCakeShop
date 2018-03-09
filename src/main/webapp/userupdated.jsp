@@ -6,16 +6,14 @@
         <title>Andy's Cupcakes - UserUpdated</title>
     </head>
     <body>
-        <%@include file="includes/LogOut.jsp" %>
-        <br>
-        <br>
-        <br>
-        
+        <%@include file="includes/menu.jsp" %>
+
         <h1>USER UPDATED</h1>
         
         <p>USER UPDATED</p>
         
         <a href="index.jsp">BACK...</a>
-        
+
+        <%@include file="includes/footer.jsp" %>
     </body>
 </html>

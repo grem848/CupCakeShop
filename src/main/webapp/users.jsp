@@ -9,41 +9,35 @@
     </head>
     <body>
         <%@include file="includes/menu.jsp" %>
-        <br>
-        <br>
-        <br>
-        <
-        
+
         <h1>USERS</h1>
-        
+
         <%
             ArrayList<User> users = (ArrayList<User>) session.getAttribute("users");
-            
-            if(users.size() > 0)
+
+            if (users.size() > 0)
             {
                 out.println("<p>Users found...</p>");
                 out.println("<p>");
-                
-                for(User u : users)
+
+                for (User u : users)
                 {
                     out.println(u.getUsername() + "<br>");
                 }
-                
+
                 out.println("</p>");
-            }
-            else
+            } else
             {
                 out.println("<p>No users found...</p>");
             }
-            
+
         %>
-        
+
         <a href="index.jsp">BACK...</a>
-        
+
         <input type="hidden" name="origin" value="showorderlist" />
-         <input type="submit" value="show orderlist" />
-        
-        
-        
+        <input type="submit" value="show orderlist" />
+
+        <%@include file="includes/footer.jsp" %>
     </body>
 </html>

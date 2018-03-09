@@ -6,7 +6,7 @@
         <title>Andy's Cupcakes - UserDeleted</title>
     </head>
     <body>
-        <%@include file="includes/LogOut.jsp" %>
+        <%@include file="includes/menu.jsp" %>
         <br>
         <br>
         <br>
@@ -16,6 +16,6 @@
         <p>USER DELETED</p>
         
         <a href="index.jsp">BACK...</a>
-        
+        <%@include file="includes/footer.jsp" %>
     </body>
 </html>

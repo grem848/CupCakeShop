@@ -83,35 +83,7 @@
         }
     </style>
     <body>
-        <div class="jumbotron">
-            <div class="container text-center">
-                <h1>ANDY'S CUPCAKES</h1>      
-                <p>World leader in cupcakes made from Martian flour</p>
-            </div>
-        </div>
-
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>                        
-                    </button>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="/WebProject/">Home</a></li>
-                        <li><a href="/WebProject/products.jsp">Products</a></li>
-                        <li><a href="#"></a></li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="/WebProject/user.jsp"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
-                        <li><a href="/WebProject/cupcakelist.jsp"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+                       <%@include file="includes/menu.jsp" %>
 
         <h1  align="center">USER</h1>
         <br>
@@ -190,9 +162,7 @@
             </div>
         </div>
 
-    <footer class="container-fluid text-center">
-        <p>ANDY'S CUPCAKES is a Copyrighted subsidiary company of AndyCorp Holdings.</p>
-    </footer>
-
+        <%@include file="includes/footer.jsp" %> 
+        
 </body>
 </html>
