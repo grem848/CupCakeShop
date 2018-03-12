@@ -21,6 +21,7 @@ public class DataMapper implements DataMapperInterface
         dbc.setDataSource(ds);
     }
 
+    
     @Override
     public ArrayList<User> getUsers()
     {
@@ -55,6 +56,12 @@ public class DataMapper implements DataMapperInterface
         return users;
     }
 
+    /**
+     * gets user.
+     * blabla test.
+     * @param un not null
+     * @return 
+     */
     @Override
     public ArrayList<User> getUsers(String un)
     {
