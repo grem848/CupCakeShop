@@ -9,10 +9,6 @@ public class DataMapperTest
     {
         DataMapper dm = new DataMapper(new DataSource1().getDataSource());
         
-//        System.out.println("getTeams: " + dm.getTeams());
-//        System.out.println("getTeamMembers: " + dm.getTeamMembers(1));
-//        System.out.println("getTeamById: " + dm.getTeam(1));
-//        System.out.println("getTeamByName: " + dm.getTeam("A"));
         System.out.println("getUsers: " + dm.getUsers().toString());
         User u1 = new User("Anders And", "123", 0, true);
         System.out.println("getUserByName: " + dm.getUser("Anders And"));
