@@ -1,7 +1,6 @@
 package datamapper;
 
 import entity.User;
-//import entity.Team;
 import java.util.ArrayList;
 import dbconnector.DBConnector;
 import entity.Bottom;
@@ -22,6 +21,15 @@ public class DataMapper implements DataMapperInterface
     }
 
     
+    /**
+     * Returns Users with no keyword given, used for searching for Users.
+     * <p>
+     * Makes a list of all Users from the database, if a String keyword 
+     * is given (not null) getUsers(String un) is used instead.
+     * <p>
+     * Used on index.jsp for searching Users.
+     * @return Users 
+     */
     @Override
     public ArrayList<User> getUsers()
     {
@@ -56,11 +64,16 @@ public class DataMapper implements DataMapperInterface
         return users;
     }
 
+    
     /**
-     * gets user.
-     * blabla test.
+     *Returns Users with a typed keyword, used for searching for Users.
+     * <p>
+     * Makes a list of Users from a keyword, if no String keyword 
+     * is given (null) getUsers() is used instead.
+     * <p>
+     * Used on index.jsp for searching Users.
      * @param un not null
-     * @return 
+     * @return Users
      */
     @Override
     public ArrayList<User> getUsers(String un)
@@ -97,6 +110,16 @@ public class DataMapper implements DataMapperInterface
         return users;
     }
 
+    
+    /**
+     * Returns User from a name.
+     * <p>
+     * Returns a User from a given String name, finding the User in the database.
+     * <p>
+     * Currently only used for testing on DataMapperTest.
+     * @param name not null
+     * @return
+     */
     @Override
     public User getUser(String name)
     {
@@ -127,6 +150,16 @@ public class DataMapper implements DataMapperInterface
         return null;
     }
 
+    
+    /**
+     * Deletes a User from a name.
+     * <p>
+     * Deletes a User with a given String username from the database.
+     * <p>
+     * Used on user.jsp for deleting a User.
+     * @param username not null
+     * @return
+     */
     @Override
     public boolean deleteUser(String username)
     {
@@ -152,6 +185,16 @@ public class DataMapper implements DataMapperInterface
         return false;
     }
 
+    
+    /**
+     * Updates a User with new information.
+     * <p>
+     * Updates an existing Users username, password, balance and/or admin status.
+     * <p>
+     * Currently unused.
+     * @param u 
+     * @return
+     */
     @Override
     public boolean updateUser(User u)
     {
@@ -180,6 +223,18 @@ public class DataMapper implements DataMapperInterface
         return false;
     }
 
+    
+    /**
+     * Creates a new User.
+     * <p>
+     * Creates a new User and adds the User to the database.
+     * <p>
+     * Only Balance and Admin can be left null, as they will default to 0.
+     * <p>
+     * Used on index.jsp for creating a new User.
+     * @param u (Username, Password not null)
+     * @return
+     */
     @Override
     public boolean createUser(User u)
     {
@@ -207,6 +262,17 @@ public class DataMapper implements DataMapperInterface
         return false;
     }
     
+    
+    /**
+     * Inserts a Cupcake object into the database.
+     * <p>
+     * Gets the Cupcake objects Topping, Bottom and Full price and inserts it
+     * into the database as a Cupcake.
+     * <p>
+     * Used on products.jsp for inserting Cupcakes in the database.
+     * @param c not null
+     * @return
+     */
     public boolean createCupcake(Cupcake c)
     {
         try
@@ -232,6 +298,18 @@ public class DataMapper implements DataMapperInterface
         return false;
     }
     
+    
+    /**
+     * Validates a User for login.
+     * <p>
+     * Validates a User by the username and password given, and logs in
+     * if unsuccessful then as anonymous user.
+     * <p>
+     * Used on login.jsp for validating a User.
+     * @param username
+     * @param password
+     * @return User
+     */
     public User validateUser(String username, String password)
     {
         User user = null;
@@ -271,6 +349,16 @@ public class DataMapper implements DataMapperInterface
         return user;
     }
     
+    
+    /**
+     * Gets all Toppings from the database.
+     * <p>
+     * Returns an arraylist of Toppings found in the database.
+     * <p>
+     * Used on products.jsp and User session.
+     * @return toppings
+     */
+    @Override
     public ArrayList<Topping> getAllToppings()
     {
         ArrayList<Topping> toppings = new ArrayList();
@@ -302,6 +390,16 @@ public class DataMapper implements DataMapperInterface
         return toppings;
     }
     
+    
+    /**
+     * Gets all Bottoms from the database.
+     * <p>
+     * Returns an arraylist of Bottoms found in the database.
+     * <p>
+     * Used on products.jsp and User session
+     * @return bottoms
+     */
+    @Override
     public ArrayList<Bottom> getAllBottoms()
     {
         ArrayList<Bottom> bottoms = new ArrayList();

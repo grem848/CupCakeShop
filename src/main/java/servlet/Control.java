@@ -28,6 +28,19 @@ public class Control extends HttpServlet {
         dm = new DataMapper(new DataSource1().getDataSource());
     }
 
+    /**
+     * Takes case and executes what the User has posted.
+     * <p>
+     * Takes a post from a button on a jsp page with a string, e.g. "login" and
+     * executes the case, like getting username and password and validating it,
+     * before sending the User to a new page.
+     * <p>
+     * Used on all pages, via the top menu or buttons, e.g. login.jsp with the case "login".
+     * @param request gets parameter "origin" then a case
+     * @param response redirects to a page
+     * @throws ServletException
+     * @throws IOException 
+     */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
 
@@ -151,16 +164,38 @@ public class Control extends HttpServlet {
 
     }
 
+    
+    /**
+     * Call for proccessRequest.
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException 
+     */
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         processRequest(request, response);
     }
 
+    /**
+     * Call for processRequest
+     * @param request 
+     * @param response 
+     * @throws ServletException
+     * @throws IOException 
+     */
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         processRequest(request, response);
     }
 
+    
+    /**
+     * Returns short description of Servlet
+     * <p>
+     * Unused
+     * @return 
+     */
     @Override
     public String getServletInfo() {
         return "Short description";
