@@ -8,7 +8,7 @@ public class DataSource1
     
     public DataSource1()
     {
-        dataSource.setServerName("159.89.108.121");
+        dataSource.setServerName("159.65.119.157");
         dataSource.setPort(3306); // 3306
         dataSource.setDatabaseName("CupCake1");
         dataSource.setUser("andreas");
